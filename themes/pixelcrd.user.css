@@ -3,16 +3,15 @@
 @author         Qiqi#0001
 @namespace      https://github.com/isuwu/
 @description    Pixel-themed style made for Discord! Fully customizable by manually editing. Built off of my older themes.
-@version        0.1.2.outdated
+@version        0.2.2
 @preprocessor   uso
 ==/UserStyle== */
 
 @-moz-document domain("discord.com") {
 /* pxlcrd */
 body {
-    /*set the bg here*/
     background-size: cover;
-    opacity: .7;
+    opacity: .9;
 }
 .appMount-3lHmkl {
     background: rgba(0, 0, 0, 1);
@@ -20,8 +19,8 @@ body {
 /* main colors */
 :root {
     --theme-version: 2;
-    --main-color: #16356d;
-    --hover-color: #1c4faf;
+    --main-color: #03aab5;
+    --hover-color: #0046ca;
     --online: #43b581;
     --idle: #faa61a;
     --dnd: #f04747;
@@ -43,7 +42,7 @@ body {
     --text-link: #bf7c00;
     --header-secondary: #d7dce8;
     --text-normal: #dcddde;
-    --text-muted: #0e002b;
+    --text-muted: var(--main-color);
     --channels-default: #d3c7ff;
     --interactive-normal: #cdd1ff;
     --interactive-hover: #93a1ff;
@@ -3088,6 +3087,9 @@ other contributors to USRBG.
 .userPopout-3XzG_A {
     backdrop-filter: blur(10px) brightness(0.6);
 }
+.timestamp-3ZCmNB {
+    color: #0000ff;
+}
 
 /*8.i. Download Apps Screen*/
 .backdrop-1wrmKB {
@@ -4494,7 +4496,7 @@ img.avatar-1BDn8e.clickable-1bVtEA {
     --unread-background: rgba(255, 255, 255, 0.008) !important;
     --selected-badge: rgb(112, 135, 215) !important;
     --selected-background: rgba(112, 135, 215, 0.1) !important;
-    --hovered: rgba(79, 84, 92, 0.16) !important;
+    --hovered: rgb(0, 49, 128) !important;
     --active: rgba(79, 84, 92, 0.24) !important;
 }
 /* .privateChannels-1nO12o .channel-2QD9_O .numberBadge-2s8kKX {
@@ -5051,9 +5053,14 @@ pre {
 .channel-2QD9_O,
 .containerDefault--pIXnN,
 .privateChannelsHeaderContainer-3NB1K1,
-.message-2qnXI6 {
-    border-left: 3px outset var(--main-color);
+.message-2qnXI6,
+.item-PXvHYJ {
+    border-left: 3px solid var(--main-color);
     background-color: rgba(0,0,0,.5)
+}
+.header-2RyJ0Y {
+    border-left: 3px outset var(--hover-color);
+    background-color: rgba(0,0,0,.7)
 }
 .containerDefault-3tr_sE {
     border-left: 3px outset var(--main-color);
@@ -5063,8 +5070,34 @@ pre {
     z-index: 2;
 }
 
+.channelTextArea-rNsIhG,
+.channelTextArea-2VhZ6z {
+    border-left: 5px solid var(--main-color);
+    background-color: rgba(0,0,0,.5);
+}
+.inner-MADQqc {
+        background-color: rgba(0,0,0,.5);
+        color: var(--main-color)
+}
 .members-1998pB {
     box-shadow: 0 -2px 20px var(--shadow) !important;
+}
+.container-2fRDfG {
+    background-color: rgba(0,0,0,.7)
+}
+/* user settings */
+.billingInformation-1MZXzx,
+.detailsBlock-FoDTGA {
+    border: 2px solid var(--main-color);
+    background-color: rgba(0,0,0,.5)
+}
+.background-1QDuV2 {
+    border: 2px solid var(--main-color);
+    background-color: rgba(0,0,0,.5)
+}
+.field-1HUseB {
+    border: 2px solid rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.5);
 }
 
 
@@ -6066,4 +6099,35 @@ div.reply-item {
         z-index: 2 !important;
     }
 }
+
+
+}
+
+@-moz-document domain("discord.com") {
+/* -- compatibility with noodlebox's (https://noodlebox.moe) line numbers -- */
+.hljs ol {
+    list-style: none;
+    counter-reset: linenumbers;
+}
+
+.hljs ol li {
+    text-indent: -4ch;
+    margin-left: 3.5ch;
+    padding-left: 0.5ch;
+    border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+.hljs ol li::before {
+    color: rgba(127,127,127,0.5);
+    display: inline-block;
+    width: 3ch;
+    margin-right: 0.5ch;
+    padding-right: 0.5ch;
+    text-align: right;
+    counter-increment: linenumbers;
+    content: counter(linenumbers);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 }
