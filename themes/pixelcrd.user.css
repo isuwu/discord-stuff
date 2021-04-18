@@ -2,8 +2,8 @@
 @name           Pixel-cord
 @author         Qiqi#0001
 @namespace      https://github.com/isuwu/
-@description    Pixel-themed style made for Discord! Fully customizable by manually editing. Built off of my older themes.
-@version        0.2.2
+@description    Pixel-themed style made for web Discord! Fully customizable by manually editing, if you can mind the messiness. This is more of a port from the PC version of BetterDiscord, so report any bugs to the author. 
+@version        0.4
 @preprocessor   uso
 ==/UserStyle== */
 
@@ -18,7 +18,7 @@ body {
 }
 /* main colors */
 :root {
-    --theme-version: 2;
+    --mention: #f00;
     --main-color: #03aab5;
     --hover-color: #0046ca;
     --online: #43b581;
@@ -5050,26 +5050,46 @@ pre {
     box-shadow: 0 2px 20px var(--shadow) !important;
 }
 
+.message-2qnXI6,
+.themed-OHr7kt {
+    border-left: 3px solid var(--main-color) !important;
+    background-color: rgba(0,0,0,.5) !important;
+}
+
 .channel-2QD9_O,
 .containerDefault--pIXnN,
-.privateChannelsHeaderContainer-3NB1K1,
-.message-2qnXI6,
-.item-PXvHYJ {
-    border-left: 3px solid var(--main-color);
+.privateChannelsHeaderContainer-3NB1K1 {
+    border-left: 3px none var(--main-color);
     background-color: rgba(0,0,0,.5)
 }
+.containerDefault--pIXnN:hover,
+.privateChannelsHeaderContainer-3NB1K1:hover,
+.channel-2QD9_O:hover {
+    border-left: 3px solid var (--main-color) !important;
+    background-color: rgba(0,0,0,.7) !important;
+}
+
+.groupStart-23k01U{
+    border-left: 3px solid var(--main-color) !important;
+    background-color: rgba(0,0,0,.6) !important;
+}
+.message-2qnXI6:hover{
+    background-color: rgba(0,0,0,.7) !important;
+}
 .header-2RyJ0Y {
-    border-left: 3px outset var(--hover-color);
+    border-left: 3px solid var(--hover-color);
     background-color: rgba(0,0,0,.7)
 }
 .containerDefault-3tr_sE {
-    border-left: 3px outset var(--main-color);
+    border-left: 3px solid var(--main-color);
     background-color: rgba(0,0,0,.6)
 }
 .sidebar-2K8pFh {
     z-index: 2;
 }
-
+.mentioned-xhSam7{
+    border-left: 3px solid var(--mention) !important;
+}
 .channelTextArea-rNsIhG,
 .channelTextArea-2VhZ6z {
     border-left: 5px solid var(--main-color);
@@ -6101,10 +6121,6 @@ div.reply-item {
 }
 
 
-}
-
-@-moz-document domain("discord.com") {
-/* -- compatibility with noodlebox's (https://noodlebox.moe) line numbers -- */
 .hljs ol {
     list-style: none;
     counter-reset: linenumbers;
