@@ -2,8 +2,8 @@
 @name           Pixel-cord
 @author         Qiqi#0001
 @namespace      https://github.com/isuwu/
-@description    Pixel-themed style made for web Discord! Fully customizable by manually editing, if you can mind the messiness. This is more of a port from the PC version of BetterDiscord, so report any bugs to the author. 
-@version        0.4
+@description    Pixel-themed style made for Discord! Fully customizable by manually editing. Built off of my older themes.
+@version        0.9.32
 @preprocessor   uso
 ==/UserStyle== */
 
@@ -13,6 +13,7 @@ body {
     background-size: cover;
     opacity: .9;
 }
+
 .appMount-3lHmkl {
     background: rgba(0, 0, 0, 1);
 }
@@ -69,8 +70,7 @@ body::before {
     content: '';
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 1);
-    background-image: url('https://media.discordapp.net/attachments/794702566042501162/831232654057144360/bg.gif');
+    background-image: url('https://media.discordapp.net/attachments/794702566042501162/834034372264460318/bg2.gif')  !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,7 +78,7 @@ body::before {
     box-shadow: inset 0 0 0 1000px var(--backdrop-darkness);
 }
 body{
-    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0)
 }
 .layer-3QrUeG,
 .layers-3iHuyZ,
@@ -3155,7 +3155,7 @@ body #app-mouont .side-8zPYf6 .itemSelected-1qLhcL:hover {
     background: var(--main-color-faded) !important;
 }
 .ui-tab-bar-item,
-.item-PXvHYJ {
+
     transition: 100ms all linear;
 }
 .closeButton-1tv5uR {
@@ -5049,7 +5049,10 @@ pre {
 .peopleColumn-29fq28 {
     box-shadow: 0 2px 20px var(--shadow) !important;
 }
-
+.side-8zPYf6 {
+    border-left: 3px solid var(--main-color) !important;
+    background-color: rgba(0,0,0,.5) !important;
+}
 .message-2qnXI6,
 .themed-OHr7kt {
     border-left: 3px solid var(--main-color) !important;
@@ -5059,16 +5062,18 @@ pre {
 .channel-2QD9_O,
 .containerDefault--pIXnN,
 .privateChannelsHeaderContainer-3NB1K1 {
-    border-left: 3px none var(--main-color);
+    border-left: 3px solid var(--main-color);
     background-color: rgba(0,0,0,.5)
 }
 .containerDefault--pIXnN:hover,
 .privateChannelsHeaderContainer-3NB1K1:hover,
 .channel-2QD9_O:hover {
-    border-left: 3px solid var (--main-color) !important;
+    border-left: 3px solid var(--hover-color) !important;
     background-color: rgba(0,0,0,.7) !important;
 }
-
+.app-1q1i1E {
+    background-color: rgba(0,0,0,.4);
+}
 .groupStart-23k01U{
     border-left: 3px solid var(--main-color) !important;
     background-color: rgba(0,0,0,.6) !important;
@@ -5077,10 +5082,10 @@ pre {
     background-color: rgba(0,0,0,.7) !important;
 }
 .header-2RyJ0Y {
-    border-left: 3px solid var(--hover-color);
     background-color: rgba(0,0,0,.7)
 }
-.containerDefault-3tr_sE {
+.containerDefault-3tr_sE,
+{
     border-left: 3px solid var(--main-color);
     background-color: rgba(0,0,0,.6)
 }
@@ -5112,8 +5117,19 @@ pre {
     background-color: rgba(0,0,0,.5)
 }
 .background-1QDuV2 {
-    border: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
     background-color: rgba(0,0,0,.5)
+}
+
+.paymentPane-3bwJ6A,
+.accountList-33MS45,
+.connectionHeader-2MDqhu,
+.connectionOptionsWrapper-3KIj1Z,
+.cardWrapper-2Min21 {
+    background-color: rgba(0,0,0,.5) !important;
+}
+.item-26Dhrx {
+    background-color: rgba(0,0,0,.5) !important;
 }
 .field-1HUseB {
     border: 2px solid rgba(0,0,0,.5);
