@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name        Experimental Settings
+// @author      kana! ♡#0001 (@kwafuuwu)
+// @namespace   https://github.com/vnikana/discord-stuff
+// @description Enables experimental settings. (user settings > experimental)
+// @match        *://*.discord.com/channels/*
+// @grant       none
+// @version     1.0
+// ==/UserScript==
+
 (() => {
     // Made using Samogot's LibDiscordInternals for BetterDiscord.
     const req = typeof(webpackJsonp) === "function" ? webpackJsonp([], {
