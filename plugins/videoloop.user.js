@@ -2,7 +2,7 @@
 // @name         Video looping in Discord.
 // @version      1.0
 // @description  Causes videos to loop infinitely, instead of ending.
-// @author       Qiqi#0001
+// @author       kana! ♡#0001 (@kwafuuwu)
 // @match        *://*.discord.com/channels/*
 // @grant        none
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
