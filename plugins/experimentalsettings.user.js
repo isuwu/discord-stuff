@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        Experimental Settings
+// @name        [patched] Experimental Settings
 // @author      kana! ♡#0001 (@kwafuuwu)
 // @namespace   https://github.com/vnikana/discord-stuff
-// @description Enables experimental settings. (user settings > experimental)
+// @description [patched/does not work anymore] Enables experimental settings. (user settings > experimental)
 // @match        *://*.discord.com/channels/*
 // @grant       none
 // @version     1.0
