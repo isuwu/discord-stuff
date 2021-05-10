@@ -1,17 +1,17 @@
 @-moz-document domain("discord.com") {
 
 /* ==UserStyle==
-@name           Pixel-cord
-@author         kana! ♡#0001 (https://twitter.com/kwafuuwu)
-@namespace      https://github.com/vnikana/
-@description    Pixel-themed style made for Discord! Fully customizable by manually editing. Built off of my older themes.
-@version        1.0.1
+@name           Gura-cord
+@author         kana!#0001 (https://twitter.com/kwafuuwu)
+@namespace      https://github.com/isuwu/
+@description    Gawr Gura themed style made for Discord! Fully customizable by manually editing. Built off of my older themes.
+@version        0.4
 @preprocessor   uso
 ==/UserStyle== */
 
 body {
     background-size: cover;
-    opacity: .9;
+    opacity: 1;
 }
 
 .appMount-3lHmkl {
@@ -70,7 +70,7 @@ body::before {
     content: '';
     height: 100%;
     width: 100%;
-    background-image: url('https://media.discordapp.net/attachments/794702566042501162/834034372264460318/bg2.gif')  !important;
+    background-image: url('https://media.discordapp.net/attachments/839182323923812433/841145672782446622/e5ddc03b4ef2271649b5ca298ca9d6c9.jpg')  !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -726,7 +726,7 @@ button.buttonWrapper-1ZmCpA.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.gro
 div[style*="width: 100%; height: 20px"] {
     height: 15px !important;
 }
-.privateChannels-1nO12o .searchBar-6Kv8R2 {
+.privateChannels-1nO12o .searchBar-6Kv8R2, .searchBarComponent-32dTOx {
     position: absolute;
     bottom: 40px;
     right: 35px;
@@ -736,7 +736,7 @@ div[style*="width: 100%; height: 20px"] {
     width: 255px;
     height: 255px;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.75) !important;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0MxNS40MSAxMi41OSAxNiAxMS4xMSAxNiA5LjUgMTYgNS45MSAxMy4wOSAzIDkuNSAzUzMgNS45MSAzIDkuNSA1LjkxIDE2IDkuNSAxNmMxLjYxIDAgMy4wOS0uNTkgNC4yMy0xLjU3bC4yNy4yOHYuNzlsNSA0Ljk5TDIwLjQ5IDE5bC00Ljk5LTV6bS02IDBDNy4wMSAxNCA1IDExLjk5IDUgOS41UzcuMDEgNSA5LjUgNSAxNCA3LjAxIDE0IDkuNSAxMS45OSAxNCA5LjUgMTR6Ii8+ICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4="), var(--main-color);
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0MxNS40MSAxMi41OSAxNiAxMS4xMSAxNiA5LjUgMTYgNS45MSAxMy4wOSAzIDkuNSAzUzMgNS45MSAzIDkuNSA1LjkxIDE2IDkuNSAxNmMxLjYxIDAgMy4wOS0uNTkgNC4yMy0xLjU3bC4yNy4yOHYuNzlsNSA0Ljk5TDIwLjQ5IDE5bC00Ljk5LTV6bS02IDBDNy4wMSAxNCA1IDExLjk5IDUgOS41UzcuMDEgNSA5LjUgNSAxNCA3LjAxIDE0IDkuNSAxMS45OSAxNCA5LjUgMTR6Ii8+ICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4="), var(--main-color) !important;
     background-position: bottom 50% right 78px, bottom 0% right 0%;
     background-repeat: no-repeat;
     background-size: 40%, cover;
@@ -2624,6 +2624,11 @@ label.checkboxWrapper-SkhIWG.alignCenter-MrlN6q {
 .ddrArrows-lSnH7P .arrow-2enltQ:after {
     height: 50px !important;
     width: 50px !important;
+}
+.panels-j1Uci_,
+.container-3baos1,
+.keyboardShortcutsModal-3piNz7 {   
+   background-color: rgba(0,0,0,.6) !important;
 }
 .ddrArrows-lSnH7P .arrow-2enltQ:before,
 .ddrArrows-lSnH7P .arrow-2enltQ:after {
@@ -5117,7 +5122,8 @@ pre {
     border: 2px solid var(--main-color);
     background-color: rgba(0,0,0,.5)
 }
-.background-1QDuV2 {
+.background-1QDuV2,
+.quickswitcher-3JagVE {
     border-bottom: 2px solid var(--main-color);
     background-color: rgba(0,0,0,.5)
 }
